@@ -40,12 +40,25 @@ def main():
     vertices[14] = np.array([node5[0]+np.cos(gamma)*channelWidth*0.5, node5[1]-np.cos(beta)*channelWidth*0.5])
     vertices[15] = np.array([node5[0]-np.cos(gamma)*channelWidth*0.5, node5[1]+np.cos(beta)*channelWidth*0.5])
 
+    vertices2 = np.zeros((6,2))
+
+    vertices2[0] = np.array([vertices[2][0], node2[1]])
+    vertices2[1] = np.array([vertices[8][0], node2[1]])
+    vertices2[2] = np.array([vertices[3][0] + np.cos(gamma)*channelWidth, vertices[3][1] - np.sin(gamma)*channelWidth])
+    vertices2[3] = np.array([vertices[3][0] + np.cos(gamma)*channelWidth, vertices[3][1] + np.sin(gamma)*channelWidth])
+    vertices2[4] = np.array([vertices[10][0] - np.cos(gamma)*channelWidth, vertices[10][1] - np.sin(gamma)*channelWidth])
+    vertices2[5] = np.array([vertices[10][0] - np.cos(gamma)*channelWidth, vertices[10][1] + np.sin(gamma)*channelWidth])
+
     print("vertices (")
     for vertex in vertices:
         print("\t({:.20f} {:.20f} 0)".format(vertex[0], vertex[1]))
     for vertex in vertices:
         print("\t({:.20f} {:.20f} 0.0001)".format(vertex[0], vertex[1]))
-    print(")")
+    for vertex in vertices2:
+        print("\t({:.20f} {:.20f} 0)".format(vertex[0], vertex[1]))
+    for vertex in vertices2:
+        print("\t({:.20f} {:.20f} 0.0001)".format(vertex[0], vertex[1]))
+    print(");")
 
 
 if __name__ == "__main__":
