@@ -9,19 +9,34 @@ for angle in "${angles[@]}"
 do
     for diffusivity in "${diffusivities[@]}"
     do
-        workdirectories+=("${angle}deg/D${diffusivity}/flowField")
+        workdirectories+=("${angle}deg/D${diffusivity}/concentrationField/")
     done
     for pressure in "${pressures[@]}"
     do
-        workdirectories+=("${angle}deg/p${pressure}/flowField")
+        workdirectories+=("${angle}deg/p${pressure}/concentrationField/")
     done
     for viscosity in "${viscosities[@]}"
     do
-        workdirectories+=("${angle}deg/v${viscosity}/flowField")
+        workdirectories+=("${angle}deg/v${viscosity}/concentrationField/")
     done
 done
 
+count=0
 for workdirectory in "${workdirectories[@]}"
 do
-    echo "${workdirectory}"
+    blockMesh -case "${workdirectory}" & (( count ++ ))
+    if (( count > 5 )); then
+        wait
+        count=0
+    fi
+done
+
+count=0
+for workdirectory in "${workdirectories[@]}"
+do
+    foamRun -case "${workdirectory}" & (( count ++ ))
+    if (( count > 5 )); then
+        wait
+        count=0
+    fi
 done
