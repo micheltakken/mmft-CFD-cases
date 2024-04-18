@@ -1,0 +1,10 @@
+cd 27deg
+pvbatch 27degPostProcessing.py
+pvbatch 27degFlowPostProcessing.py
+cd ../45deg
+pvbatch 45degPostProcessing.py
+pvbatch 45degFlowPostProcessing.py
+cd ../90deg
+pvbatch 90degPostProcessing.py
+pvbatch 90degFlowPostProcessing.py
+cd ..

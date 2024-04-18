@@ -36,7 +36,7 @@ SourceFiles
 #include "regionFunctionObject.H"
 
 //{{{ begin codeInclude
-#line 66 "45deg/p1.0/concentrationField/system/controlDict/functions/mixingQualityCheck"
+#line 66 "/home/michel/Git/mmft-CFD-cases/DiffusiveMixing/H-mixer/45deg/p1.0/concentrationField/system/controlDict/functions/mixingQualityCheck"
 #include "volFields.H"
 //}}} end codeInclude
 

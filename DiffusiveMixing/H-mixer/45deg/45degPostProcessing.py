@@ -1,0 +1,72 @@
+from paraview.simple import *
+
+def main():
+    diffusivities = ['1e-7', '1e-8', '1e-9']
+    pressures = ['0.01', '0.1', '1.0']
+    viscosities = ['1e-5', '1e-6', '1e-7']
+
+    for diffusivity in diffusivities:
+        location = "./D" + diffusivity + "/concentrationField/"
+        generateCSV(location)
+
+    for pressure in pressures:
+        location = "./p" + pressure + "/concentrationField/"
+        generateCSV(location)
+    
+    for viscosity in viscosities:
+        location = "./v" + viscosity + "/concentrationField/"
+        generateCSV(location)
+
+def generateCSV(folder):
+    #### disable automatic camera reset on 'Show'
+    paraview.simple._DisableFirstRenderCameraReset()
+
+    # create a new 'OpenFOAMReader'
+    filefoam = OpenFOAMReader(registrationName=folder+'openfoam.foam', FileName=folder+'openfoam.foam')
+    filefoam.MeshRegions = ['internalMesh']
+    filefoam.CellArrays = ['C']
+
+    # create a new 'Plot Over Line'
+    plotOverLineA = PlotOverLine(registrationName='PlotOverLineA', Input=filefoam)
+    plotOverLineA.Point1 = [0.003, 0.00195, 5e-5]
+    plotOverLineA.Point2 = [0.003, 0.00205, 5e-5]
+
+    # create a new 'Plot Over Line'
+    plotOverLineB = PlotOverLine(registrationName='PlotOverLineB', Input=filefoam)
+    plotOverLineB.Point1 = [0.004, 0.00195, 5e-5]
+    plotOverLineB.Point2 = [0.004, 0.00205, 5e-5]
+
+    # create a new 'Plot Over Line'
+    plotOverLineC = PlotOverLine(registrationName='PlotOverLineC', Input=filefoam)
+    plotOverLineC.Point1 = [0.00400000, 0.001929289, 5e-5]
+    plotOverLineC.Point2 = [0.00407071, 0.002, 5e-5]
+
+    # create a new 'Plot Over Line'
+    plotOverLineD = PlotOverLine(registrationName='PlotOverLineD', Input=filefoam)
+    plotOverLineD.Point1 = [0.00407071, 0.002, 5e-5]
+    plotOverLineD.Point2 = [0.004, 0.00207071, 5e-5]
+
+    # create a new 'Plot Over Line'
+    plotOverLineE = PlotOverLine(registrationName='PlotOverLineE', Input=filefoam)
+    plotOverLineE.Point1 = [0.00596464, -0.00003535, 5e-5]
+    plotOverLineE.Point2 = [0.00603535, 0.00003535, 5e-5]
+
+    # create a new 'Plot Over Line'
+    plotOverLineF = PlotOverLine(registrationName='PlotOverLineF', Input=filefoam)
+    plotOverLineF.Point1 = [0.00603535, 0.00396464, 5e-5]
+    plotOverLineF.Point2 = [0.00596464, 0.00403535, 5e-5]
+
+    # Properties modified on plotOverLine1
+    # plotOverLineA.Resolution = 1000
+
+    # save data
+    SaveData(folder+'A-A.csv', proxy=plotOverLineA, PointDataArrays=['C', 'arc_length'])
+    SaveData(folder+'B-B.csv', proxy=plotOverLineB, PointDataArrays=['C', 'arc_length'])
+    SaveData(folder+'C-C.csv', proxy=plotOverLineC, PointDataArrays=['C', 'arc_length'])
+    SaveData(folder+'D-D.csv', proxy=plotOverLineD, PointDataArrays=['C', 'arc_length'])
+    SaveData(folder+'E-E.csv', proxy=plotOverLineE, PointDataArrays=['C', 'arc_length'])
+    SaveData(folder+'F-F.csv', proxy=plotOverLineF, PointDataArrays=['C', 'arc_length'])
+
+
+if __name__ == "__main__":
+    main()

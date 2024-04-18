@@ -145,7 +145,7 @@ bool mixingQualityCheckFunctionObject::execute()
     }
 
 //{{{ begin code
-    #line 71 "45deg/p1.0/concentrationField/system/controlDict/functions/mixingQualityCheck"
+    #line 71 "/home/michel/Git/mmft-CFD-cases/DiffusiveMixing/H-mixer/45deg/p1.0/concentrationField/system/controlDict/functions/mixingQualityCheck"
 const volScalarField& C
             (
                 mesh().lookupObject<volScalarField>("C")

@@ -41,13 +41,13 @@ boundaryField
     inlet_0
     {
         type            fixedValue;
-        value           uniform 1;
+        value           uniform 1.0;
     }
 
     inlet_1
     {
         type            fixedValue;
-        value           uniform 1;
+        value           uniform 1.0;
     }
 
     frontAndBack
