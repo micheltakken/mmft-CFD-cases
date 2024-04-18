@@ -1,23 +1,17 @@
-angles=( '27' '45' '90' )
-diffusivities=( '1e-7' '1e-8' '1e-9' )
-pressures=( '1.0' '0.1' '0.01' )
-viscosities=( '1e-5' '1e-6' '1e-7' )
+angles=( '14' '27' '45' '63' '90' )
+lengths=( '2' '10' '20' )
+velocities=( '0.1' '0.01' )
 
 workdirectories=()
 
 for angle in "${angles[@]}"
 do
-    for diffusivity in "${diffusivities[@]}"
+    for length in "${lengths[@]}"
     do
-        workdirectories+=("${angle}deg/D${diffusivity}/flowField/")
-    done
-    for pressure in "${pressures[@]}"
-    do
-        workdirectories+=("${angle}deg/p${pressure}/flowField/")
-    done
-    for viscosity in "${viscosities[@]}"
-    do
-        workdirectories+=("${angle}deg/v${viscosity}/flowField/")
+        for velocity in "${velocities[@]}"
+        do
+            workdirectories+=("${angle}deg/cL${length}/U${velocity}/flowField/")
+        done
     done
 done
 
