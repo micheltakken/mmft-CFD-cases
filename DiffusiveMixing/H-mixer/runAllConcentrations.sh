@@ -1,23 +1,21 @@
-angles=( '27' '45' '90' )
-diffusivities=( '1e-7' '1e-8' '1e-9' )
-pressures=( '1.0' '0.1' '0.01' )
-viscosities=( '1e-5' '1e-6' '1e-7' )
+angles=( '14' '27' '45' '63' '90' )
+lengths=( '2' '10' '20' )
+velocities=( '0.1' '0.01' )
+concentrations=( '8.1' '8.2' '8.3' '8.4' '8.5' '8.6' '8.7' '8.8' '8.9' '8.10' )
 
 workdirectories=()
 
 for angle in "${angles[@]}"
 do
-    for diffusivity in "${diffusivities[@]}"
+    for length in "${lengths[@]}"
     do
-        workdirectories+=("${angle}deg/D${diffusivity}/concentrationField/")
-    done
-    for pressure in "${pressures[@]}"
-    do
-        workdirectories+=("${angle}deg/p${pressure}/concentrationField/")
-    done
-    for viscosity in "${viscosities[@]}"
-    do
-        workdirectories+=("${angle}deg/v${viscosity}/concentrationField/")
+        for velocity in "${velocities[@]}"
+        do
+            for concentration in "${concentrations[@]}"
+            do
+                workdirectories+=("${angle}deg/cL${length}/U${velocity}/D${concentration}/")
+            done
+        done
     done
 done
 
@@ -25,17 +23,18 @@ count=0
 for workdirectory in "${workdirectories[@]}"
 do
     blockMesh -case "${workdirectory}" & (( count ++ ))
-    if (( count > 5 )); then
+    if (( count > 10 )); then
         wait
         count=0
     fi
 done
+wait
 
 count=0
 for workdirectory in "${workdirectories[@]}"
 do
     foamRun -case "${workdirectory}" & (( count ++ ))
-    if (( count > 5 )); then
+    if (( count > 10 )); then
         wait
         count=0
     fi
