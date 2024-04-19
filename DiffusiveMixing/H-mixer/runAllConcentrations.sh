@@ -1,7 +1,12 @@
-angles=( '14' '27' '45' '63' '90' )
+#angles=( '14' '27' '45' '63' '90' )
+angles=( '27' )
 lengths=( '2' '10' '20' )
 velocities=( '0.1' '0.01' )
 concentrations=( '8.1' '8.2' '8.3' '8.4' '8.5' '8.6' '8.7' '8.8' '8.9' '8.10' )
+#lengths=('20')
+#velocities=('0.1')
+#concentrations=('8.1')
+
 
 workdirectories=()
 
@@ -23,18 +28,18 @@ count=0
 for workdirectory in "${workdirectories[@]}"
 do
     blockMesh -case "${workdirectory}" & (( count ++ ))
-    if (( count > 10 )); then
+    if (( count > 20 )); then
         wait
         count=0
     fi
 done
-wait
+#wait
 
 count=0
 for workdirectory in "${workdirectories[@]}"
 do
     foamRun -case "${workdirectory}" & (( count ++ ))
-    if (( count > 10 )); then
+    if (( count > 20 )); then
         wait
         count=0
     fi

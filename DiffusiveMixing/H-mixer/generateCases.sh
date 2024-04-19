@@ -17,7 +17,7 @@ do
 		do
 			cp -r templateConc/ "${angle}deg/cL${length}/U${velocity}/D8.$((i+1))"
 			cd "${angle}deg/cL${length}/U${velocity}/D8.$((i+1))"
-			cp ../flowField/system/blockMeshDict system/blockMeshDicti
+			cp ../flowField/system/blockMeshDict system/blockMeshDict
     		cp ../flowField/[1-9]*/p 0/p
     		cp ../flowField/[1-9]*/U 0/U
     		cp ../flowField/[1-9]*/phi 0/phi
