@@ -50,7 +50,7 @@ boundaryField
     inlet_1
     {
         type            uniformFixedValue;
-        uniformValue    (0 0.01 0);
+        uniformValue    (0.01 0 0);
     }
 
     inlet_2
