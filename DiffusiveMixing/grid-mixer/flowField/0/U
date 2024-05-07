@@ -38,12 +38,14 @@ boundaryField
 
     inlet_0
     {
-        type            zeroGradient;
+        type            uniformFixedValue;
+        uniformValue    (0.007071068 0.007071068 0);
     }
 
     inlet_1
     {
-        type            zeroGradient;
+        type            uniformFixedValue;
+        uniformValue    (0.007071068 -0.007071068 0);
     }
 
     frontAndBack

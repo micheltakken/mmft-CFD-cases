@@ -38,37 +38,44 @@ boundaryField
 
     inlet_0
     {
-        type            zeroGradient;
+        type            uniformFixedValue;
+        uniformValue    (0.008944272 0.004472136 0);
     }
 
     inlet_1
     {
-        type            zeroGradient;
+        type            uniformFixedValue;
+        uniformValue    (0.008944272 -0.004472136 0);
     }
 
     inlet_2
     {
-        type            zeroGradient;
+        type            uniformFixedValue;
+        uniformValue    (0.008944272 0.004472136 0);
     }
 
     inlet_3
     {
-        type            zeroGradient;
+        type            uniformFixedValue;
+        uniformValue    (0.008944272 -0.004472136 0);
     }
 
     inlet_4
     {
-        type            zeroGradient;
+        type            uniformFixedValue;
+        uniformValue    (-0.008944272 0.004472136 0);
     }
 
     inlet_5
     {
-        type            zeroGradient;
+        type            uniformFixedValue;
+        uniformValue    (0.01 0 0);
     }
 
     inlet_6
     {
-        type            zeroGradient;
+        type            uniformFixedValue;
+        uniformValue    (-0.008944272 -0.004472136 0);
     }
 
     frontAndBack
