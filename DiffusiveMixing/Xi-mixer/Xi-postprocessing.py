@@ -1,7 +1,7 @@
 from paraview.simple import *
 
 def main():
-    location = "./"
+    location = "./concentrationField/"
     generateCSV(location)
 
 def generateCSV(folder):
