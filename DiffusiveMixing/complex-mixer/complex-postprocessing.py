@@ -45,8 +45,8 @@ def generateCSV(folder):
 
     # create a new 'Plot Over Line'
     plotOverLineG = PlotOverLine(registrationName='PlotOverLineG', Input=filefoam)
-    plotOverLineG.Point1 = [0.00821180, 0.00305, 5e-5]
-    plotOverLineG.Point2 = [0.00821180, 0.00295, 5e-5]
+    plotOverLineG.Point1 = [0.00798819, 0.00305, 5e-5]
+    plotOverLineG.Point2 = [0.00798819, 0.00295, 5e-5]
 
     # create a new 'Plot Over Line'
     plotOverLineH = PlotOverLine(registrationName='PlotOverLineH', Input=filefoam)
