@@ -72,7 +72,7 @@ def plotConc(directory):
     ax[2, 2].set_title("H-H")
 
 
-    fig.savefig("Plots.png", dpi=100)
+    fig.savefig("Case2-comparison.png", dpi=100)
     fig.clf()
 
 if __name__ == "__main__":

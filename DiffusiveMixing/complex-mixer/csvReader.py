@@ -99,7 +99,7 @@ def plotConc(directory):
     ax[2, 3].set_title("L-L")
 
 
-    fig.savefig("Plots.png", dpi=100)
+    fig.savefig("Case4-comparison.png", dpi=100)
     fig.clf()
 
 if __name__ == "__main__":
