@@ -9,6 +9,8 @@ def main():
             location = "./U" + velocity + "/D" + diffusivity + "/"
             generateCSV(location)
 
+    generateCSV("./U0.01/D8.0/")
+
 def generateCSV(folder):
     #### disable automatic camera reset on 'Show'
     paraview.simple._DisableFirstRenderCameraReset()

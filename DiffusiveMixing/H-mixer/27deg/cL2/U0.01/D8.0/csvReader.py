@@ -11,19 +11,18 @@ def plotConc(directory):
     fig.suptitle(" ", x=0.38, size=10, weight='bold')
     #fig.suptitle("Concentration Distributions Case 2", x=0.38, size=16, weight='bold')
 
-    fileNameA = directory + "/concentrationField/C-C.csv"
-    fileNameB = directory + "/concentrationField/D-D.csv"
-    fileNameC = directory + "/concentrationField/F-F.csv"
-    fileNameD = directory + "/concentrationField/H-H.csv"
-    fileNameE = directory + "/concentrationField/K-K.csv"
-    fileNameF = directory + "/concentrationField/L-L.csv"
+    fileNameA = "A-A.csv"
+    fileNameB = "B-B.csv"
+    fileNameC = "C-C.csv"
+    fileNameD = "D-D.csv"
+    fileNameE = "E-E.csv"
+    fileNameF = "F-F.csv"
 
-    filenameTestA = directory + "/Case-C.csv"
-    filenameTestB = directory + "/Case4-D.csv"
-    filenameTestC = directory + "/Case4-F.csv"
-    filenameTestD = directory + "/Case4-H.csv"
-    filenameTestE = directory + "/Case4-K.csv"
-    filenameTestF = directory + "/Case4-L.csv"
+    filenameTestB = directory + "/Case1Test-B.csv"
+    filenameTestC = directory + "/Case1Test-C.csv"
+    filenameTestD = directory + "/Case1Test-D.csv"
+    filenameTestE = directory + "/Case1Test-E.csv"
+    filenameTestF = directory + "/Case1Test-F.csv"
 
     dataA = pd.read_csv(fileNameA)
     dataB = pd.read_csv(fileNameB)
@@ -32,7 +31,6 @@ def plotConc(directory):
     dataE = pd.read_csv(fileNameE)
     dataF = pd.read_csv(fileNameF)
 
-    dataTestA = pd.read_csv(filenameTestA)
     dataTestB = pd.read_csv(filenameTestB)
     dataTestC = pd.read_csv(filenameTestC)
     dataTestD = pd.read_csv(filenameTestD)
@@ -41,9 +39,8 @@ def plotConc(directory):
 
 
     ax[0, 0].plot((100/(dataA['arc_length'].to_numpy()[-1]))*dataA['arc_length'].to_numpy(), dataA['C'].to_numpy(), label="CFD")
-    ax[0, 0].plot((100/(dataTestA['x'].to_numpy()[-1]))*dataTestA['x'].to_numpy(), dataTestA['f(x)'].to_numpy(), label="Abstract", color="red")
-    ax[0, 1].plot((100/(dataB['arc_length'].to_numpy()[-1]))*dataB['arc_length'].to_numpy(), dataB['C'].to_numpy(), label="B-B'")
-    ax[0, 1].plot((100/(dataTestB['x'].to_numpy()[-1]))*dataTestB['x'].to_numpy(), dataTestB['f(x)'].to_numpy(), label="B-B'-Test", color="red")
+    ax[0, 1].plot((100/(dataB['arc_length'].to_numpy()[-1]))*dataB['arc_length'].to_numpy(), dataB['C'].to_numpy(), label="CFD")
+    ax[0, 1].plot((100/(dataTestB['x'].to_numpy()[-1]))*dataTestB['x'].to_numpy(), dataTestB['f(x)'].to_numpy(), label="Abstract", color="red")
     ax[1, 0].plot((100/(dataC['arc_length'].to_numpy()[-1]))*dataC['arc_length'].to_numpy(), dataC['C'].to_numpy(), label="C-C'")
     ax[1, 0].plot((100/(dataTestC['x'].to_numpy()[-1]))*dataTestC['x'].to_numpy(), dataTestC['f(x)'].to_numpy(), label="C-C'-Test", color="red")
     ax[1, 1].plot((100/(dataD['arc_length'].to_numpy()[-1]))*dataD['arc_length'].to_numpy(), dataD['C'].to_numpy(), label="D-D'")
@@ -74,7 +71,7 @@ def plotConc(directory):
     ax[2, 0].set_title("E-E'")
     ax[2, 1].set_title("F-F'")
 
-    lines_labels = [ax[0,0].get_legend_handles_labels()]
+    lines_labels = [ax[0,1].get_legend_handles_labels()]
     lines, labels = [sum(lol, []) for lol in zip(*lines_labels)]
     
 
@@ -83,7 +80,7 @@ def plotConc(directory):
     fig.supylabel("Concentration (%)")
     fig.tight_layout(w_pad=1.5)
     fig.tight_layout(h_pad=1)
-    fig.savefig("Complex-Plots.png")
+    fig.savefig("H-Plots.png")
     fig.clf()
 
 if __name__ == "__main__":
