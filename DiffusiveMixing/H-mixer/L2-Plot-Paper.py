@@ -71,9 +71,9 @@ def plotRealErrors(angles, channelLengths, velocities, diffusivities):
                         directory = angle + "deg/cL" + length + "/U" + velocity + "/D" + diffusivity
                         # Peclet Nr.
                         if diffusivity != '8.10':
-                            xPoints[lengthPos][anglePos][velPos][diffpos] = (10**(-float(diffusivity)))
+                            xPoints[lengthPos][anglePos][velPos][diffpos] = 1e-4*float(velocity)/(10**(-float(diffusivity)))
                         else:
-                            xPoints[lengthPos][anglePos][velPos][diffpos] = (10**(-9))
+                            xPoints[lengthPos][anglePos][velPos][diffpos] = 1e-4*float(velocity)/(10**(-9))
                         # Error value
                         yPoints[lengthPos][anglePos][velPos][diffpos] = MSE_Error(directory)
                     except:
@@ -85,23 +85,20 @@ def plotRealErrors(angles, channelLengths, velocities, diffusivities):
             anglePos += 1
         lengthPos += 1
 
-    for length in range(len(channelLengths)):
-        for vel in range(len(velocities)):
-            plt.title("channel length " + channelLengths[length] + ", velocity " + velocities[vel])
-            plt.xlabel('Diffusion coefficient [m2/s]')
-            plt.ylabel('MSE')
-            #plt.xlim(200, 2*10**4.1)
-            plt.ylim(0, 0.1)
-            #plt.xscale("log")
-            plt.plot(xPoints[length][0][vel][:], yPoints[length][0][vel][:], 'ro', label=angles[0])
-            # plt.plot(xPoints[length][1][vel][:], yPoints[length][1][vel][:], 'xb', label=angles[1])
-            # plt.plot(xPoints[length][2][vel][:], yPoints[length][2][vel][:], 'xg', label=angles[2])
-            # plt.plot(xPoints[length][3][vel][:], yPoints[length][3][vel][:], 'bo', label=angles[3])
-            # plt.plot(xPoints[length][4][vel][:], yPoints[length][4][vel][:], 'xr', label=angles[4])
-            plt.legend()
-            plt.savefig("cL" + channelLengths[length] + "U" + velocities[vel]+ ".png", dpi=100)
-            #plt.show()
-            plt.clf()
+    plt.title("Mean Squared Errors")
+    plt.xlabel('Peclet Number')
+    plt.ylabel('MSE')
+    plt.xlim(1e4, 125)
+    plt.ylim(0, 0.008)
+    plt.xscale("log")
+    plt.plot(np.concatenate((xPoints[0][0][0][:], xPoints[0][0][1][:])), np.concatenate((yPoints[0][0][0][:], yPoints[0][0][1][:])), '-rx', label='cL 2 mm')
+    plt.plot(np.concatenate((xPoints[1][0][0][:], xPoints[1][0][1][:])), np.concatenate((yPoints[1][0][0][:], yPoints[1][0][1][:])), '-gx', label='cL 10 mm')
+    plt.plot(np.concatenate((xPoints[2][0][0][:], xPoints[2][0][1][:])), np.concatenate((yPoints[2][0][0][:], yPoints[2][0][1][:])), '-bx', label='cL 20 mm')
+    plt.legend()
+    plt.savefig("MSE_27deg_Pe.png", dpi=100)
+    #plt.show()
+    plt.clf()
+
 
 def plotErrors(angles, channelLengths, velocities, diffusivities):
     
