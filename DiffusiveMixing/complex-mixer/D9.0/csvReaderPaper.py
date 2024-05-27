@@ -18,7 +18,7 @@ def plotConc(directory):
     fileNameE = directory + "/concentrationField/K-K.csv"
     fileNameF = directory + "/concentrationField/L-L.csv"
 
-    filenameTestA = directory + "/Case-C.csv"
+    filenameTestA = directory + "/Case4-C.csv"
     filenameTestB = directory + "/Case4-D.csv"
     filenameTestC = directory + "/Case4-F.csv"
     filenameTestD = directory + "/Case4-H.csv"

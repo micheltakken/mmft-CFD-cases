@@ -16,10 +16,10 @@ def plotConc(directory):
     fileNameC = directory + "/concentrationField/G-G.csv"
     fileNameD = directory + "/concentrationField/H-H.csv"
 
-    filenameAbstA = directory + "/Case2-B.csv"
-    filenameAbstB = directory + "/Case2-F.csv"
-    filenameAbstC = directory + "/Case2-G.csv"
-    filenameAbstD = directory + "/Case2-H.csv"
+    # filenameAbstA = directory + "/Case2-B.csv"
+    # filenameAbstB = directory + "/Case2-F.csv"
+    # filenameAbstC = directory + "/Case2-G.csv"
+    # filenameAbstD = directory + "/Case2-H.csv"
 
     filenameTestA = directory + "/Case2Test-B.csv"
     filenameTestB = directory + "/Case2Test-F.csv"
