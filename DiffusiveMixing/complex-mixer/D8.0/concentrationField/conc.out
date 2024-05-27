@@ -1,0 +1,4061 @@
+nohup: ignoring input
+/*---------------------------------------------------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Website:  https://openfoam.org
+    \\  /    A nd           | Version:  11
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+Build  : 11-c219200fdb8b
+Exec   : foamRun
+Date   : May 09 2024
+Time   : 15:32:21
+Host   : "cda-server-4"
+PID    : 4036639
+I/O    : uncollated
+Case   : /home/takken/mmft-CFD-cases/DiffusiveMixing/complex-mixer/concentrationField
+nProcs : 1
+sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 10)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Create mesh for time = 0
+
+Selecting solver functions
+Selecting solver incompressibleFluid
+Selecting viscosity model constant
+Selecting turbulence model type laminar
+Selecting laminar stress model Stokes
+No MRF models present
+
+Courant Number mean: 81.1983 max: 452.896
+
+PIMPLE: No convergence criteria found
+
+
+PIMPLE: Operating solver in transient mode with 1 outer corrector
+PIMPLE: Operating solver in PISO mode
+
+
+
+Starting time loop
+
+Using dynamicCode for coded mixingQualityCheck at line 59 in "/home/takken/mmft-CFD-cases/DiffusiveMixing/complex-mixer/concentrationField/system/controlDict/functions/mixingQualityCheck"
+Creating new library in "dynamicCode/mixingQualityCheck/platforms/linux64GccDPInt32Opt/lib/libmixingQualityCheck_c02623056b6dcd01f746e751a7731192a5e7c92a.so"
+"/opt/openfoam11/etc/codeTemplates/dynamicCode/codedFunctionObjectTemplate.C" "/home/takken/mmft-CFD-cases/DiffusiveMixing/complex-mixer/concentrationField/dynamicCode/mixingQualityCheck/codedFunctionObjectTemplate.C"
+"/opt/openfoam11/etc/codeTemplates/dynamicCode/codedFunctionObjectTemplate.H" "/home/takken/mmft-CFD-cases/DiffusiveMixing/complex-mixer/concentrationField/dynamicCode/mixingQualityCheck/codedFunctionObjectTemplate.H"
+Invoking "wmake -s libso /home/takken/mmft-CFD-cases/DiffusiveMixing/complex-mixer/concentrationField/dynamicCode/mixingQualityCheck"
+wmake libso /home/takken/mmft-CFD-cases/DiffusiveMixing/complex-mixer/concentrationField/dynamicCode/mixingQualityCheck
+    ln: ./lnInclude
+    wmkdep: codedFunctionObjectTemplate.C
+    Ctoo: codedFunctionObjectTemplate.C
+    ld: /home/takken/mmft-CFD-cases/DiffusiveMixing/complex-mixer/concentrationField/dynamicCode/mixingQualityCheck/../platforms/linux64GccDPInt32Opt/lib/libmixingQualityCheck_c02623056b6dcd01f746e751a7731192a5e7c92a.so
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 1, Final residual = 9.87448e-07, No Iterations 120
+
+mixingQuality = 0.0100944
+Time = 0.01s
+
+ExecutionTime = 7.44506 s  ClockTime = 10 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 0.267143, Final residual = 8.02338e-07, No Iterations 123
+
+mixingQuality = 0.0243068
+Time = 0.02s
+
+ExecutionTime = 10.7843 s  ClockTime = 13 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 0.124595, Final residual = 9.58366e-07, No Iterations 112
+
+mixingQuality = 0.0390575
+Time = 0.03s
+
+ExecutionTime = 13.8242 s  ClockTime = 16 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 0.0840624, Final residual = 7.12356e-07, No Iterations 102
+
+mixingQuality = 0.0536154
+Time = 0.04s
+
+ExecutionTime = 16.6039 s  ClockTime = 19 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 0.0636778, Final residual = 9.56964e-07, No Iterations 95
+
+mixingQuality = 0.0677992
+Time = 0.05s
+
+ExecutionTime = 19.2071 s  ClockTime = 22 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 0.052679, Final residual = 8.95626e-07, No Iterations 94
+
+mixingQuality = 0.0818456
+Time = 0.06s
+
+ExecutionTime = 21.7711 s  ClockTime = 24 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 0.0453396, Final residual = 8.57607e-07, No Iterations 98
+
+mixingQuality = 0.0958541
+Time = 0.07s
+
+ExecutionTime = 24.4412 s  ClockTime = 27 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 0.0400668, Final residual = 6.92162e-07, No Iterations 94
+
+mixingQuality = 0.109857
+Time = 0.08s
+
+ExecutionTime = 27.0047 s  ClockTime = 30 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 0.0360805, Final residual = 9.84082e-07, No Iterations 93
+
+mixingQuality = 0.123858
+Time = 0.09s
+
+ExecutionTime = 29.5406 s  ClockTime = 32 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 0.0329508, Final residual = 9.83598e-07, No Iterations 94
+
+mixingQuality = 0.137856
+Time = 0.1s
+
+ExecutionTime = 32.1046 s  ClockTime = 35 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 0.0304302, Final residual = 9.62124e-07, No Iterations 91
+
+mixingQuality = 0.151853
+Time = 0.11s
+
+ExecutionTime = 34.6001 s  ClockTime = 37 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 0.0283591, Final residual = 8.79349e-07, No Iterations 94
+
+mixingQuality = 0.165849
+Time = 0.12s
+
+ExecutionTime = 37.1645 s  ClockTime = 40 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 0.0266304, Final residual = 5.42393e-07, No Iterations 101
+
+mixingQuality = 0.179844
+Time = 0.13s
+
+ExecutionTime = 39.9142 s  ClockTime = 43 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 0.0251687, Final residual = 7.70705e-07, No Iterations 104
+
+mixingQuality = 0.193837
+Time = 0.14s
+
+ExecutionTime = 42.7431 s  ClockTime = 45 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 0.0239191, Final residual = 9.57354e-07, No Iterations 96
+
+mixingQuality = 0.207827
+Time = 0.15s
+
+ExecutionTime = 45.3612 s  ClockTime = 48 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 0.0228394, Final residual = 6.76093e-07, No Iterations 103
+
+mixingQuality = 0.22181
+Time = 0.16s
+
+ExecutionTime = 48.1608 s  ClockTime = 51 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 0.0218974, Final residual = 9.27031e-07, No Iterations 102
+
+mixingQuality = 0.235783
+Time = 0.17s
+
+ExecutionTime = 50.9345 s  ClockTime = 54 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 0.0210677, Final residual = 9.64589e-07, No Iterations 101
+
+mixingQuality = 0.249738
+Time = 0.18s
+
+ExecutionTime = 53.686 s  ClockTime = 56 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 0.020334, Final residual = 5.81406e-07, No Iterations 102
+
+mixingQuality = 0.263666
+Time = 0.19s
+
+ExecutionTime = 56.4597 s  ClockTime = 59 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 0.0196849, Final residual = 5.09153e-07, No Iterations 102
+
+mixingQuality = 0.277553
+Time = 0.2s
+
+ExecutionTime = 59.2348 s  ClockTime = 62 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 0.019111, Final residual = 5.63485e-07, No Iterations 102
+
+mixingQuality = 0.291382
+Time = 0.21s
+
+ExecutionTime = 62.0102 s  ClockTime = 65 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 0.018597, Final residual = 9.9065e-07, No Iterations 101
+
+mixingQuality = 0.305131
+Time = 0.22s
+
+ExecutionTime = 64.7572 s  ClockTime = 67 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 0.0181292, Final residual = 9.63658e-07, No Iterations 100
+
+mixingQuality = 0.318773
+Time = 0.23s
+
+ExecutionTime = 67.4926 s  ClockTime = 70 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 0.0176967, Final residual = 9.66335e-07, No Iterations 98
+
+mixingQuality = 0.332279
+Time = 0.24s
+
+ExecutionTime = 70.1642 s  ClockTime = 73 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 0.0172891, Final residual = 9.67846e-07, No Iterations 98
+
+mixingQuality = 0.345615
+Time = 0.25s
+
+ExecutionTime = 72.8477 s  ClockTime = 76 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 0.0168952, Final residual = 9.20855e-07, No Iterations 96
+
+mixingQuality = 0.358745
+Time = 0.26s
+
+ExecutionTime = 75.468 s  ClockTime = 78 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 0.0165048, Final residual = 9.83422e-07, No Iterations 94
+
+mixingQuality = 0.371631
+Time = 0.27s
+
+ExecutionTime = 78.0352 s  ClockTime = 81 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 0.0161084, Final residual = 8.52235e-07, No Iterations 97
+
+mixingQuality = 0.384236
+Time = 0.28s
+
+ExecutionTime = 80.6958 s  ClockTime = 83 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 0.0156997, Final residual = 4.45458e-07, No Iterations 106
+
+mixingQuality = 0.396523
+Time = 0.29s
+
+ExecutionTime = 83.5856 s  ClockTime = 86 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 0.0152739, Final residual = 9.10247e-07, No Iterations 101
+
+mixingQuality = 0.408455
+Time = 0.3s
+
+ExecutionTime = 86.3405 s  ClockTime = 89 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 0.0148291, Final residual = 8.62351e-07, No Iterations 99
+
+mixingQuality = 0.420002
+Time = 0.31s
+
+ExecutionTime = 89.049 s  ClockTime = 92 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 0.0143644, Final residual = 9.64095e-07, No Iterations 99
+
+mixingQuality = 0.431133
+Time = 0.32s
+
+ExecutionTime = 91.7646 s  ClockTime = 94 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 0.0138805, Final residual = 9.19691e-07, No Iterations 99
+
+mixingQuality = 0.441822
+Time = 0.33s
+
+ExecutionTime = 94.5052 s  ClockTime = 97 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 0.0133789, Final residual = 9.64778e-07, No Iterations 104
+
+mixingQuality = 0.452049
+Time = 0.34s
+
+ExecutionTime = 97.3934 s  ClockTime = 100 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 0.0128606, Final residual = 5.03845e-07, No Iterations 107
+
+mixingQuality = 0.461794
+Time = 0.35s
+
+ExecutionTime = 100.35 s  ClockTime = 103 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 0.0123263, Final residual = 7.3929e-07, No Iterations 105
+
+mixingQuality = 0.471046
+Time = 0.36s
+
+ExecutionTime = 103.124 s  ClockTime = 106 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 0.0117773, Final residual = 7.77977e-07, No Iterations 105
+
+mixingQuality = 0.479793
+Time = 0.37s
+
+ExecutionTime = 105.889 s  ClockTime = 109 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 0.0112153, Final residual = 5.78255e-07, No Iterations 108
+
+mixingQuality = 0.488029
+Time = 0.38s
+
+ExecutionTime = 108.732 s  ClockTime = 111 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 0.0106423, Final residual = 7.31244e-07, No Iterations 107
+
+mixingQuality = 0.495753
+Time = 0.39s
+
+ExecutionTime = 111.548 s  ClockTime = 114 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 0.0100605, Final residual = 9.97726e-07, No Iterations 106
+
+mixingQuality = 0.502966
+Time = 0.4s
+
+ExecutionTime = 114.354 s  ClockTime = 117 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 0.00947239, Final residual = 8.01129e-07, No Iterations 104
+
+mixingQuality = 0.509673
+Time = 0.41s
+
+ExecutionTime = 117.094 s  ClockTime = 120 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 0.00888069, Final residual = 4.55361e-07, No Iterations 105
+
+mixingQuality = 0.515881
+Time = 0.42s
+
+ExecutionTime = 119.861 s  ClockTime = 123 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 0.00828861, Final residual = 6.94768e-07, No Iterations 105
+
+mixingQuality = 0.521601
+Time = 0.43s
+
+ExecutionTime = 122.627 s  ClockTime = 125 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 0.00769968, Final residual = 9.63881e-07, No Iterations 105
+
+mixingQuality = 0.526847
+Time = 0.44s
+
+ExecutionTime = 125.403 s  ClockTime = 128 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 0.00711755, Final residual = 9.41948e-07, No Iterations 104
+
+mixingQuality = 0.531637
+Time = 0.45s
+
+ExecutionTime = 128.144 s  ClockTime = 131 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 0.00654604, Final residual = 9.90334e-07, No Iterations 106
+
+mixingQuality = 0.535987
+Time = 0.46s
+
+ExecutionTime = 130.936 s  ClockTime = 134 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 0.00598893, Final residual = 7.146e-07, No Iterations 104
+
+mixingQuality = 0.53992
+Time = 0.47s
+
+ExecutionTime = 133.677 s  ClockTime = 136 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 0.00544978, Final residual = 6.11102e-07, No Iterations 103
+
+mixingQuality = 0.543458
+Time = 0.48s
+
+ExecutionTime = 136.392 s  ClockTime = 139 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 0.00493209, Final residual = 6.05592e-07, No Iterations 101
+
+mixingQuality = 0.546624
+Time = 0.49s
+
+ExecutionTime = 139.057 s  ClockTime = 142 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 0.00443884, Final residual = 8.04988e-07, No Iterations 101
+
+mixingQuality = 0.549443
+Time = 0.5s
+
+ExecutionTime = 141.72 s  ClockTime = 145 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 0.00397258, Final residual = 6.19216e-07, No Iterations 99
+
+mixingQuality = 0.551941
+Time = 0.51s
+
+ExecutionTime = 144.333 s  ClockTime = 147 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 0.00353524, Final residual = 9.47802e-07, No Iterations 92
+
+mixingQuality = 0.554143
+Time = 0.52s
+
+ExecutionTime = 146.776 s  ClockTime = 150 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 0.00312847, Final residual = 9.42864e-07, No Iterations 93
+
+mixingQuality = 0.556073
+Time = 0.53s
+
+ExecutionTime = 149.233 s  ClockTime = 152 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 0.00275313, Final residual = 8.83286e-07, No Iterations 92
+
+mixingQuality = 0.557758
+Time = 0.54s
+
+ExecutionTime = 151.668 s  ClockTime = 154 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 0.00240947, Final residual = 9.47505e-07, No Iterations 90
+
+mixingQuality = 0.55922
+Time = 0.55s
+
+ExecutionTime = 154.049 s  ClockTime = 157 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 0.00209722, Final residual = 7.03249e-07, No Iterations 89
+
+mixingQuality = 0.560482
+Time = 0.56s
+
+ExecutionTime = 156.405 s  ClockTime = 159 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 0.00181553, Final residual = 8.33162e-07, No Iterations 88
+
+mixingQuality = 0.561567
+Time = 0.57s
+
+ExecutionTime = 158.735 s  ClockTime = 162 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 0.00156329, Final residual = 6.92208e-07, No Iterations 85
+
+mixingQuality = 0.562494
+Time = 0.58s
+
+ExecutionTime = 160.986 s  ClockTime = 164 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 0.00133897, Final residual = 8.15966e-07, No Iterations 85
+
+mixingQuality = 0.563283
+Time = 0.59s
+
+ExecutionTime = 163.239 s  ClockTime = 166 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 0.00114085, Final residual = 7.14146e-07, No Iterations 84
+
+mixingQuality = 0.563951
+Time = 0.6s
+
+ExecutionTime = 165.467 s  ClockTime = 168 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 0.00096701, Final residual = 9.97357e-07, No Iterations 84
+
+mixingQuality = 0.564513
+Time = 0.61s
+
+ExecutionTime = 167.695 s  ClockTime = 171 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 0.000815536, Final residual = 6.02973e-07, No Iterations 82
+
+mixingQuality = 0.564985
+Time = 0.62s
+
+ExecutionTime = 169.872 s  ClockTime = 173 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 0.000684304, Final residual = 4.72753e-07, No Iterations 82
+
+mixingQuality = 0.565378
+Time = 0.63s
+
+ExecutionTime = 172.047 s  ClockTime = 175 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 0.000571353, Final residual = 8.8149e-07, No Iterations 80
+
+mixingQuality = 0.565705
+Time = 0.64s
+
+ExecutionTime = 174.171 s  ClockTime = 177 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 0.000474769, Final residual = 3.79851e-07, No Iterations 77
+
+mixingQuality = 0.565974
+Time = 0.65s
+
+ExecutionTime = 176.22 s  ClockTime = 179 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 0.000392566, Final residual = 7.84852e-07, No Iterations 76
+
+mixingQuality = 0.566196
+Time = 0.66s
+
+ExecutionTime = 178.243 s  ClockTime = 181 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 0.000323098, Final residual = 7.85293e-07, No Iterations 72
+
+mixingQuality = 0.566378
+Time = 0.67s
+
+ExecutionTime = 180.165 s  ClockTime = 183 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 0.000264649, Final residual = 9.06188e-07, No Iterations 54
+
+mixingQuality = 0.566526
+Time = 0.68s
+
+ExecutionTime = 181.624 s  ClockTime = 184 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 0.000215771, Final residual = 9.58002e-07, No Iterations 41
+
+mixingQuality = 0.566646
+Time = 0.69s
+
+ExecutionTime = 182.749 s  ClockTime = 186 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 0.000175155, Final residual = 9.24821e-07, No Iterations 43
+
+mixingQuality = 0.566743
+Time = 0.7s
+
+ExecutionTime = 183.925 s  ClockTime = 187 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 0.000141555, Final residual = 9.10138e-07, No Iterations 36
+
+mixingQuality = 0.566821
+Time = 0.71s
+
+ExecutionTime = 184.922 s  ClockTime = 188 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 0.000113913, Final residual = 7.48529e-07, No Iterations 33
+
+mixingQuality = 0.566884
+Time = 0.72s
+
+ExecutionTime = 185.843 s  ClockTime = 189 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 9.12971e-05, Final residual = 7.80165e-07, No Iterations 32
+
+mixingQuality = 0.566934
+Time = 0.73s
+
+ExecutionTime = 186.737 s  ClockTime = 190 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 7.28263e-05, Final residual = 9.71398e-07, No Iterations 33
+
+mixingQuality = 0.566973
+Time = 0.74s
+
+ExecutionTime = 187.657 s  ClockTime = 190 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 5.78558e-05, Final residual = 9.66977e-07, No Iterations 30
+
+mixingQuality = 0.567005
+Time = 0.75s
+
+ExecutionTime = 188.501 s  ClockTime = 191 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 4.58215e-05, Final residual = 9.12478e-07, No Iterations 23
+
+mixingQuality = 0.567029
+Time = 0.76s
+
+ExecutionTime = 189.166 s  ClockTime = 192 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 3.61622e-05, Final residual = 8.58925e-07, No Iterations 21
+
+mixingQuality = 0.567049
+Time = 0.77s
+
+ExecutionTime = 189.78 s  ClockTime = 193 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 2.8404e-05, Final residual = 9.74029e-07, No Iterations 22
+
+mixingQuality = 0.567064
+Time = 0.78s
+
+ExecutionTime = 190.431 s  ClockTime = 193 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 2.22179e-05, Final residual = 9.88495e-07, No Iterations 17
+
+mixingQuality = 0.567076
+Time = 0.79s
+
+ExecutionTime = 190.953 s  ClockTime = 194 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 1.73584e-05, Final residual = 9.51014e-07, No Iterations 19
+
+mixingQuality = 0.567085
+Time = 0.8s
+
+ExecutionTime = 191.527 s  ClockTime = 194 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 1.34558e-05, Final residual = 6.63686e-07, No Iterations 18
+
+mixingQuality = 0.567092
+Time = 0.81s
+
+ExecutionTime = 192.067 s  ClockTime = 195 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 1.03938e-05, Final residual = 9.63522e-07, No Iterations 14
+
+mixingQuality = 0.567097
+Time = 0.82s
+
+ExecutionTime = 192.5 s  ClockTime = 195 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.00621e-06, Final residual = 5.86954e-07, No Iterations 16
+
+mixingQuality = 0.567101
+Time = 0.83s
+
+ExecutionTime = 192.985 s  ClockTime = 196 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 6.14314e-06, Final residual = 9.86666e-07, No Iterations 13
+
+mixingQuality = 0.567105
+Time = 0.84s
+
+ExecutionTime = 193.394 s  ClockTime = 196 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 4.78358e-06, Final residual = 4.71672e-07, No Iterations 15
+
+mixingQuality = 0.567107
+Time = 0.85s
+
+ExecutionTime = 193.853 s  ClockTime = 197 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 3.61704e-06, Final residual = 8.25609e-07, No Iterations 12
+
+mixingQuality = 0.567109
+Time = 0.86s
+
+ExecutionTime = 194.236 s  ClockTime = 197 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 2.89314e-06, Final residual = 9.34292e-07, No Iterations 9
+
+mixingQuality = 0.56711
+Time = 0.87s
+
+ExecutionTime = 194.554 s  ClockTime = 197 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 2.33943e-06, Final residual = 2.24661e-07, No Iterations 14
+
+mixingQuality = 0.567111
+Time = 0.88s
+
+ExecutionTime = 194.988 s  ClockTime = 198 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 1.55918e-06, Final residual = 4.12733e-07, No Iterations 7
+
+mixingQuality = 0.567112
+Time = 0.89s
+
+ExecutionTime = 195.242 s  ClockTime = 198 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 1.2607e-06, Final residual = 6.75025e-07, No Iterations 7
+
+mixingQuality = 0.567113
+Time = 0.9s
+
+ExecutionTime = 195.497 s  ClockTime = 198 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 1.17284e-06, Final residual = 5.17817e-07, No Iterations 9
+
+mixingQuality = 0.567113
+Time = 0.91s
+
+ExecutionTime = 195.803 s  ClockTime = 199 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 0.92s
+
+ExecutionTime = 195.884 s  ClockTime = 199 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 0.93s
+
+ExecutionTime = 195.966 s  ClockTime = 199 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 0.94s
+
+ExecutionTime = 196.047 s  ClockTime = 199 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 0.95s
+
+ExecutionTime = 196.128 s  ClockTime = 199 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 0.96s
+
+ExecutionTime = 196.209 s  ClockTime = 199 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 0.97s
+
+ExecutionTime = 196.29 s  ClockTime = 199 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 0.98s
+
+ExecutionTime = 196.371 s  ClockTime = 199 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 0.99s
+
+ExecutionTime = 196.452 s  ClockTime = 199 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 1s
+
+ExecutionTime = 196.533 s  ClockTime = 199 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 1.01s
+
+ExecutionTime = 196.614 s  ClockTime = 199 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 1.02s
+
+ExecutionTime = 196.696 s  ClockTime = 200 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 1.03s
+
+ExecutionTime = 196.777 s  ClockTime = 200 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 1.04s
+
+ExecutionTime = 196.857 s  ClockTime = 200 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 1.05s
+
+ExecutionTime = 196.938 s  ClockTime = 200 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 1.06s
+
+ExecutionTime = 197.019 s  ClockTime = 200 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 1.07s
+
+ExecutionTime = 197.1 s  ClockTime = 200 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 1.08s
+
+ExecutionTime = 197.181 s  ClockTime = 200 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 1.09s
+
+ExecutionTime = 197.263 s  ClockTime = 200 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 1.1s
+
+ExecutionTime = 197.345 s  ClockTime = 200 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 1.11s
+
+ExecutionTime = 197.426 s  ClockTime = 200 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 1.12s
+
+ExecutionTime = 197.506 s  ClockTime = 200 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 1.13s
+
+ExecutionTime = 197.587 s  ClockTime = 200 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 1.14s
+
+ExecutionTime = 197.669 s  ClockTime = 201 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 1.15s
+
+ExecutionTime = 197.75 s  ClockTime = 201 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 1.16s
+
+ExecutionTime = 197.83 s  ClockTime = 201 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 1.17s
+
+ExecutionTime = 197.912 s  ClockTime = 201 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 1.18s
+
+ExecutionTime = 197.992 s  ClockTime = 201 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 1.19s
+
+ExecutionTime = 198.072 s  ClockTime = 201 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 1.2s
+
+ExecutionTime = 198.154 s  ClockTime = 201 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 1.21s
+
+ExecutionTime = 198.234 s  ClockTime = 201 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 1.22s
+
+ExecutionTime = 198.315 s  ClockTime = 201 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 1.23s
+
+ExecutionTime = 198.396 s  ClockTime = 201 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 1.24s
+
+ExecutionTime = 198.477 s  ClockTime = 201 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 1.25s
+
+ExecutionTime = 198.558 s  ClockTime = 201 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 1.26s
+
+ExecutionTime = 198.639 s  ClockTime = 202 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 1.27s
+
+ExecutionTime = 198.72 s  ClockTime = 202 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 1.28s
+
+ExecutionTime = 198.801 s  ClockTime = 202 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 1.29s
+
+ExecutionTime = 198.882 s  ClockTime = 202 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 1.3s
+
+ExecutionTime = 198.963 s  ClockTime = 202 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 1.31s
+
+ExecutionTime = 199.044 s  ClockTime = 202 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 1.32s
+
+ExecutionTime = 199.126 s  ClockTime = 202 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 1.33s
+
+ExecutionTime = 199.207 s  ClockTime = 202 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 1.34s
+
+ExecutionTime = 199.287 s  ClockTime = 202 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 1.35s
+
+ExecutionTime = 199.367 s  ClockTime = 202 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 1.36s
+
+ExecutionTime = 199.449 s  ClockTime = 202 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 1.37s
+
+ExecutionTime = 199.53 s  ClockTime = 202 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 1.38s
+
+ExecutionTime = 199.611 s  ClockTime = 202 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 1.39s
+
+ExecutionTime = 199.692 s  ClockTime = 203 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 1.4s
+
+ExecutionTime = 199.773 s  ClockTime = 203 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 1.41s
+
+ExecutionTime = 199.853 s  ClockTime = 203 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 1.42s
+
+ExecutionTime = 199.933 s  ClockTime = 203 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 1.43s
+
+ExecutionTime = 200.014 s  ClockTime = 203 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 1.44s
+
+ExecutionTime = 200.095 s  ClockTime = 203 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 1.45s
+
+ExecutionTime = 200.176 s  ClockTime = 203 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 1.46s
+
+ExecutionTime = 200.257 s  ClockTime = 203 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 1.47s
+
+ExecutionTime = 200.338 s  ClockTime = 203 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 1.48s
+
+ExecutionTime = 200.419 s  ClockTime = 203 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 1.49s
+
+ExecutionTime = 200.499 s  ClockTime = 203 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 1.5s
+
+ExecutionTime = 200.581 s  ClockTime = 203 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 1.51s
+
+ExecutionTime = 200.662 s  ClockTime = 204 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 1.52s
+
+ExecutionTime = 200.743 s  ClockTime = 204 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 1.53s
+
+ExecutionTime = 200.824 s  ClockTime = 204 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 1.54s
+
+ExecutionTime = 200.905 s  ClockTime = 204 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 1.55s
+
+ExecutionTime = 200.986 s  ClockTime = 204 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 1.56s
+
+ExecutionTime = 201.066 s  ClockTime = 204 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 1.57s
+
+ExecutionTime = 201.147 s  ClockTime = 204 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 1.58s
+
+ExecutionTime = 201.228 s  ClockTime = 204 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 1.59s
+
+ExecutionTime = 201.309 s  ClockTime = 204 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 1.6s
+
+ExecutionTime = 201.39 s  ClockTime = 204 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 1.61s
+
+ExecutionTime = 201.47 s  ClockTime = 204 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 1.62s
+
+ExecutionTime = 201.551 s  ClockTime = 204 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 1.63s
+
+ExecutionTime = 201.632 s  ClockTime = 205 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 1.64s
+
+ExecutionTime = 201.713 s  ClockTime = 205 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 1.65s
+
+ExecutionTime = 201.795 s  ClockTime = 205 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 1.66s
+
+ExecutionTime = 201.875 s  ClockTime = 205 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 1.67s
+
+ExecutionTime = 201.956 s  ClockTime = 205 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 1.68s
+
+ExecutionTime = 202.037 s  ClockTime = 205 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 1.69s
+
+ExecutionTime = 202.118 s  ClockTime = 205 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 1.7s
+
+ExecutionTime = 202.199 s  ClockTime = 205 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 1.71s
+
+ExecutionTime = 202.279 s  ClockTime = 205 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 1.72s
+
+ExecutionTime = 202.359 s  ClockTime = 205 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 1.73s
+
+ExecutionTime = 202.441 s  ClockTime = 205 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 1.74s
+
+ExecutionTime = 202.522 s  ClockTime = 205 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 1.75s
+
+ExecutionTime = 202.602 s  ClockTime = 205 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 1.76s
+
+ExecutionTime = 202.683 s  ClockTime = 206 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 1.77s
+
+ExecutionTime = 202.764 s  ClockTime = 206 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 1.78s
+
+ExecutionTime = 202.845 s  ClockTime = 206 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 1.79s
+
+ExecutionTime = 202.926 s  ClockTime = 206 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 1.8s
+
+ExecutionTime = 203.006 s  ClockTime = 206 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 1.81s
+
+ExecutionTime = 203.088 s  ClockTime = 206 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 1.82s
+
+ExecutionTime = 203.169 s  ClockTime = 206 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 1.83s
+
+ExecutionTime = 203.25 s  ClockTime = 206 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 1.84s
+
+ExecutionTime = 203.331 s  ClockTime = 206 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 1.85s
+
+ExecutionTime = 203.412 s  ClockTime = 206 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 1.86s
+
+ExecutionTime = 203.493 s  ClockTime = 206 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 1.87s
+
+ExecutionTime = 203.573 s  ClockTime = 206 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 1.88s
+
+ExecutionTime = 203.655 s  ClockTime = 207 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 1.89s
+
+ExecutionTime = 203.736 s  ClockTime = 207 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 1.9s
+
+ExecutionTime = 203.817 s  ClockTime = 207 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 1.91s
+
+ExecutionTime = 203.898 s  ClockTime = 207 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 1.92s
+
+ExecutionTime = 203.978 s  ClockTime = 207 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 1.93s
+
+ExecutionTime = 204.06 s  ClockTime = 207 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 1.94s
+
+ExecutionTime = 204.141 s  ClockTime = 207 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 1.95s
+
+ExecutionTime = 204.222 s  ClockTime = 207 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 1.96s
+
+ExecutionTime = 204.303 s  ClockTime = 207 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 1.97s
+
+ExecutionTime = 204.383 s  ClockTime = 207 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 1.98s
+
+ExecutionTime = 204.465 s  ClockTime = 207 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 1.99s
+
+ExecutionTime = 204.546 s  ClockTime = 207 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 2s
+
+ExecutionTime = 204.627 s  ClockTime = 208 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 2.01s
+
+ExecutionTime = 204.708 s  ClockTime = 208 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 2.02s
+
+ExecutionTime = 204.789 s  ClockTime = 208 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 2.03s
+
+ExecutionTime = 204.87 s  ClockTime = 208 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 2.04s
+
+ExecutionTime = 204.951 s  ClockTime = 208 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 2.05s
+
+ExecutionTime = 205.032 s  ClockTime = 208 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 2.06s
+
+ExecutionTime = 205.114 s  ClockTime = 208 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 2.07s
+
+ExecutionTime = 205.195 s  ClockTime = 208 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 2.08s
+
+ExecutionTime = 205.277 s  ClockTime = 208 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 2.09s
+
+ExecutionTime = 205.358 s  ClockTime = 208 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 2.1s
+
+ExecutionTime = 205.438 s  ClockTime = 208 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 2.11s
+
+ExecutionTime = 205.518 s  ClockTime = 208 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 2.12s
+
+ExecutionTime = 205.599 s  ClockTime = 208 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 2.13s
+
+ExecutionTime = 205.68 s  ClockTime = 209 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 2.14s
+
+ExecutionTime = 205.769 s  ClockTime = 209 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 2.15s
+
+ExecutionTime = 205.85 s  ClockTime = 209 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 2.16s
+
+ExecutionTime = 205.932 s  ClockTime = 209 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 2.17s
+
+ExecutionTime = 206.014 s  ClockTime = 209 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 2.18s
+
+ExecutionTime = 206.095 s  ClockTime = 209 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 2.19s
+
+ExecutionTime = 206.176 s  ClockTime = 209 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 2.2s
+
+ExecutionTime = 206.258 s  ClockTime = 209 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 2.21s
+
+ExecutionTime = 206.339 s  ClockTime = 209 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 2.22s
+
+ExecutionTime = 206.421 s  ClockTime = 209 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 2.23s
+
+ExecutionTime = 206.503 s  ClockTime = 209 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 2.24s
+
+ExecutionTime = 206.584 s  ClockTime = 210 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 2.25s
+
+ExecutionTime = 206.665 s  ClockTime = 210 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 2.26s
+
+ExecutionTime = 206.746 s  ClockTime = 210 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 2.27s
+
+ExecutionTime = 206.827 s  ClockTime = 210 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 2.28s
+
+ExecutionTime = 206.908 s  ClockTime = 210 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 2.29s
+
+ExecutionTime = 206.99 s  ClockTime = 210 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 2.3s
+
+ExecutionTime = 207.071 s  ClockTime = 210 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 2.31s
+
+ExecutionTime = 207.151 s  ClockTime = 210 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 2.32s
+
+ExecutionTime = 207.232 s  ClockTime = 210 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 2.33s
+
+ExecutionTime = 207.314 s  ClockTime = 210 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 2.34s
+
+ExecutionTime = 207.395 s  ClockTime = 210 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 2.35s
+
+ExecutionTime = 207.476 s  ClockTime = 210 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 2.36s
+
+ExecutionTime = 207.557 s  ClockTime = 210 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 2.37s
+
+ExecutionTime = 207.639 s  ClockTime = 211 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 2.38s
+
+ExecutionTime = 207.72 s  ClockTime = 211 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 2.39s
+
+ExecutionTime = 207.801 s  ClockTime = 211 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 2.4s
+
+ExecutionTime = 207.883 s  ClockTime = 211 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 2.41s
+
+ExecutionTime = 207.963 s  ClockTime = 211 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 2.42s
+
+ExecutionTime = 208.044 s  ClockTime = 211 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 2.43s
+
+ExecutionTime = 208.126 s  ClockTime = 211 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 2.44s
+
+ExecutionTime = 208.207 s  ClockTime = 211 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 2.45s
+
+ExecutionTime = 208.288 s  ClockTime = 211 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 2.46s
+
+ExecutionTime = 208.369 s  ClockTime = 211 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 2.47s
+
+ExecutionTime = 208.45 s  ClockTime = 211 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 2.48s
+
+ExecutionTime = 208.531 s  ClockTime = 211 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 2.49s
+
+ExecutionTime = 208.612 s  ClockTime = 212 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 2.5s
+
+ExecutionTime = 208.693 s  ClockTime = 212 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 2.51s
+
+ExecutionTime = 208.775 s  ClockTime = 212 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 2.52s
+
+ExecutionTime = 208.856 s  ClockTime = 212 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 2.53s
+
+ExecutionTime = 208.938 s  ClockTime = 212 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 2.54s
+
+ExecutionTime = 209.019 s  ClockTime = 212 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 2.55s
+
+ExecutionTime = 209.1 s  ClockTime = 212 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 2.56s
+
+ExecutionTime = 209.182 s  ClockTime = 212 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 2.57s
+
+ExecutionTime = 209.263 s  ClockTime = 212 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 2.58s
+
+ExecutionTime = 209.343 s  ClockTime = 212 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 2.59s
+
+ExecutionTime = 209.424 s  ClockTime = 212 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 2.6s
+
+ExecutionTime = 209.505 s  ClockTime = 212 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 2.61s
+
+ExecutionTime = 209.586 s  ClockTime = 213 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 2.62s
+
+ExecutionTime = 209.667 s  ClockTime = 213 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 2.63s
+
+ExecutionTime = 209.748 s  ClockTime = 213 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 2.64s
+
+ExecutionTime = 209.83 s  ClockTime = 213 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 2.65s
+
+ExecutionTime = 209.911 s  ClockTime = 213 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 2.66s
+
+ExecutionTime = 209.992 s  ClockTime = 213 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 2.67s
+
+ExecutionTime = 210.073 s  ClockTime = 213 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 2.68s
+
+ExecutionTime = 210.154 s  ClockTime = 213 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 2.69s
+
+ExecutionTime = 210.235 s  ClockTime = 213 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 2.7s
+
+ExecutionTime = 210.315 s  ClockTime = 213 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 2.71s
+
+ExecutionTime = 210.396 s  ClockTime = 213 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 2.72s
+
+ExecutionTime = 210.477 s  ClockTime = 213 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 2.73s
+
+ExecutionTime = 210.558 s  ClockTime = 213 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 2.74s
+
+ExecutionTime = 210.64 s  ClockTime = 214 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 2.75s
+
+ExecutionTime = 210.721 s  ClockTime = 214 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 2.76s
+
+ExecutionTime = 210.802 s  ClockTime = 214 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 2.77s
+
+ExecutionTime = 210.884 s  ClockTime = 214 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 2.78s
+
+ExecutionTime = 210.966 s  ClockTime = 214 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 2.79s
+
+ExecutionTime = 211.046 s  ClockTime = 214 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 2.8s
+
+ExecutionTime = 211.128 s  ClockTime = 214 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 2.81s
+
+ExecutionTime = 211.209 s  ClockTime = 214 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 2.82s
+
+ExecutionTime = 211.289 s  ClockTime = 214 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 2.83s
+
+ExecutionTime = 211.37 s  ClockTime = 214 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 2.84s
+
+ExecutionTime = 211.45 s  ClockTime = 214 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 2.85s
+
+ExecutionTime = 211.532 s  ClockTime = 214 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 2.86s
+
+ExecutionTime = 211.613 s  ClockTime = 215 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 2.87s
+
+ExecutionTime = 211.693 s  ClockTime = 215 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 2.88s
+
+ExecutionTime = 211.773 s  ClockTime = 215 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 2.89s
+
+ExecutionTime = 211.855 s  ClockTime = 215 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 2.9s
+
+ExecutionTime = 211.935 s  ClockTime = 215 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 2.91s
+
+ExecutionTime = 212.016 s  ClockTime = 215 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 2.92s
+
+ExecutionTime = 212.098 s  ClockTime = 215 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 2.93s
+
+ExecutionTime = 212.179 s  ClockTime = 215 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 2.94s
+
+ExecutionTime = 212.261 s  ClockTime = 215 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 2.95s
+
+ExecutionTime = 212.342 s  ClockTime = 215 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 2.96s
+
+ExecutionTime = 212.423 s  ClockTime = 215 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 2.97s
+
+ExecutionTime = 212.503 s  ClockTime = 215 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 2.98s
+
+ExecutionTime = 212.584 s  ClockTime = 216 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 2.99s
+
+ExecutionTime = 212.665 s  ClockTime = 216 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 3s
+
+ExecutionTime = 212.746 s  ClockTime = 216 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 3.01s
+
+ExecutionTime = 212.827 s  ClockTime = 216 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 3.02s
+
+ExecutionTime = 212.909 s  ClockTime = 216 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 3.03s
+
+ExecutionTime = 212.99 s  ClockTime = 216 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 3.04s
+
+ExecutionTime = 213.071 s  ClockTime = 216 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 3.05s
+
+ExecutionTime = 213.151 s  ClockTime = 216 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 3.06s
+
+ExecutionTime = 213.232 s  ClockTime = 216 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 3.07s
+
+ExecutionTime = 213.313 s  ClockTime = 216 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 3.08s
+
+ExecutionTime = 213.394 s  ClockTime = 216 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 3.09s
+
+ExecutionTime = 213.475 s  ClockTime = 216 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 3.1s
+
+ExecutionTime = 213.556 s  ClockTime = 216 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 3.11s
+
+ExecutionTime = 213.636 s  ClockTime = 217 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 3.12s
+
+ExecutionTime = 213.717 s  ClockTime = 217 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 3.13s
+
+ExecutionTime = 213.797 s  ClockTime = 217 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 3.14s
+
+ExecutionTime = 213.879 s  ClockTime = 217 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 3.15s
+
+ExecutionTime = 213.96 s  ClockTime = 217 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 3.16s
+
+ExecutionTime = 214.041 s  ClockTime = 217 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 3.17s
+
+ExecutionTime = 214.122 s  ClockTime = 217 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 3.18s
+
+ExecutionTime = 214.202 s  ClockTime = 217 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 3.19s
+
+ExecutionTime = 214.284 s  ClockTime = 217 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 3.2s
+
+ExecutionTime = 214.365 s  ClockTime = 217 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 3.21s
+
+ExecutionTime = 214.446 s  ClockTime = 217 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 3.22s
+
+ExecutionTime = 214.527 s  ClockTime = 217 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 3.23s
+
+ExecutionTime = 214.609 s  ClockTime = 218 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 3.24s
+
+ExecutionTime = 214.69 s  ClockTime = 218 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 3.25s
+
+ExecutionTime = 214.771 s  ClockTime = 218 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 3.26s
+
+ExecutionTime = 214.852 s  ClockTime = 218 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 3.27s
+
+ExecutionTime = 214.933 s  ClockTime = 218 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 3.28s
+
+ExecutionTime = 215.014 s  ClockTime = 218 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 3.29s
+
+ExecutionTime = 215.095 s  ClockTime = 218 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 3.3s
+
+ExecutionTime = 215.177 s  ClockTime = 218 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 3.31s
+
+ExecutionTime = 215.257 s  ClockTime = 218 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 3.32s
+
+ExecutionTime = 215.339 s  ClockTime = 218 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 3.33s
+
+ExecutionTime = 215.42 s  ClockTime = 218 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 3.34s
+
+ExecutionTime = 215.501 s  ClockTime = 218 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 3.35s
+
+ExecutionTime = 215.582 s  ClockTime = 219 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 3.36s
+
+ExecutionTime = 215.662 s  ClockTime = 219 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 3.37s
+
+ExecutionTime = 215.743 s  ClockTime = 219 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 3.38s
+
+ExecutionTime = 215.823 s  ClockTime = 219 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 3.39s
+
+ExecutionTime = 215.905 s  ClockTime = 219 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 3.4s
+
+ExecutionTime = 215.986 s  ClockTime = 219 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 3.41s
+
+ExecutionTime = 216.066 s  ClockTime = 219 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 3.42s
+
+ExecutionTime = 216.147 s  ClockTime = 219 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 3.43s
+
+ExecutionTime = 216.228 s  ClockTime = 219 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 3.44s
+
+ExecutionTime = 216.309 s  ClockTime = 219 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 3.45s
+
+ExecutionTime = 216.39 s  ClockTime = 219 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 3.46s
+
+ExecutionTime = 216.471 s  ClockTime = 219 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 3.47s
+
+ExecutionTime = 216.551 s  ClockTime = 219 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 3.48s
+
+ExecutionTime = 216.632 s  ClockTime = 220 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 3.49s
+
+ExecutionTime = 216.713 s  ClockTime = 220 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 3.5s
+
+ExecutionTime = 216.795 s  ClockTime = 220 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 3.51s
+
+ExecutionTime = 216.875 s  ClockTime = 220 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 3.52s
+
+ExecutionTime = 216.957 s  ClockTime = 220 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 3.53s
+
+ExecutionTime = 217.038 s  ClockTime = 220 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 3.54s
+
+ExecutionTime = 217.119 s  ClockTime = 220 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 3.55s
+
+ExecutionTime = 217.2 s  ClockTime = 220 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 3.56s
+
+ExecutionTime = 217.282 s  ClockTime = 220 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 3.57s
+
+ExecutionTime = 217.363 s  ClockTime = 220 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 3.58s
+
+ExecutionTime = 217.443 s  ClockTime = 220 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 3.59s
+
+ExecutionTime = 217.524 s  ClockTime = 220 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 3.6s
+
+ExecutionTime = 217.605 s  ClockTime = 221 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 3.61s
+
+ExecutionTime = 217.686 s  ClockTime = 221 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 3.62s
+
+ExecutionTime = 217.766 s  ClockTime = 221 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 3.63s
+
+ExecutionTime = 217.847 s  ClockTime = 221 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 3.64s
+
+ExecutionTime = 217.928 s  ClockTime = 221 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 3.65s
+
+ExecutionTime = 218.01 s  ClockTime = 221 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 3.66s
+
+ExecutionTime = 218.091 s  ClockTime = 221 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 3.67s
+
+ExecutionTime = 218.172 s  ClockTime = 221 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 3.68s
+
+ExecutionTime = 218.253 s  ClockTime = 221 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 3.69s
+
+ExecutionTime = 218.334 s  ClockTime = 221 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 3.7s
+
+ExecutionTime = 218.416 s  ClockTime = 221 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 3.71s
+
+ExecutionTime = 218.497 s  ClockTime = 221 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 3.72s
+
+ExecutionTime = 218.578 s  ClockTime = 222 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 3.73s
+
+ExecutionTime = 218.659 s  ClockTime = 222 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 3.74s
+
+ExecutionTime = 218.74 s  ClockTime = 222 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 3.75s
+
+ExecutionTime = 218.821 s  ClockTime = 222 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 3.76s
+
+ExecutionTime = 218.902 s  ClockTime = 222 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 3.77s
+
+ExecutionTime = 218.983 s  ClockTime = 222 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 3.78s
+
+ExecutionTime = 219.063 s  ClockTime = 222 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 3.79s
+
+ExecutionTime = 219.144 s  ClockTime = 222 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 3.8s
+
+ExecutionTime = 219.224 s  ClockTime = 222 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 3.81s
+
+ExecutionTime = 219.305 s  ClockTime = 222 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 3.82s
+
+ExecutionTime = 219.385 s  ClockTime = 222 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 3.83s
+
+ExecutionTime = 219.467 s  ClockTime = 222 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 3.84s
+
+ExecutionTime = 219.548 s  ClockTime = 222 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 3.85s
+
+ExecutionTime = 219.629 s  ClockTime = 223 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 3.86s
+
+ExecutionTime = 219.71 s  ClockTime = 223 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 3.87s
+
+ExecutionTime = 219.791 s  ClockTime = 223 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 3.88s
+
+ExecutionTime = 219.872 s  ClockTime = 223 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 3.89s
+
+ExecutionTime = 219.953 s  ClockTime = 223 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 3.9s
+
+ExecutionTime = 220.034 s  ClockTime = 223 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 3.91s
+
+ExecutionTime = 220.115 s  ClockTime = 223 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 3.92s
+
+ExecutionTime = 220.196 s  ClockTime = 223 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 3.93s
+
+ExecutionTime = 220.277 s  ClockTime = 223 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 3.94s
+
+ExecutionTime = 220.358 s  ClockTime = 223 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 3.95s
+
+ExecutionTime = 220.438 s  ClockTime = 223 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 3.96s
+
+ExecutionTime = 220.519 s  ClockTime = 223 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 3.97s
+
+ExecutionTime = 220.601 s  ClockTime = 224 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 3.98s
+
+ExecutionTime = 220.682 s  ClockTime = 224 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 3.99s
+
+ExecutionTime = 220.763 s  ClockTime = 224 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 4s
+
+ExecutionTime = 220.844 s  ClockTime = 224 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 4.01s
+
+ExecutionTime = 220.925 s  ClockTime = 224 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 4.02s
+
+ExecutionTime = 221.006 s  ClockTime = 224 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 4.03s
+
+ExecutionTime = 221.087 s  ClockTime = 224 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 4.04s
+
+ExecutionTime = 221.168 s  ClockTime = 224 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 4.05s
+
+ExecutionTime = 221.25 s  ClockTime = 224 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 4.06s
+
+ExecutionTime = 221.33 s  ClockTime = 224 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 4.07s
+
+ExecutionTime = 221.411 s  ClockTime = 224 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 4.08s
+
+ExecutionTime = 221.492 s  ClockTime = 224 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 4.09s
+
+ExecutionTime = 221.573 s  ClockTime = 225 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 4.1s
+
+ExecutionTime = 221.655 s  ClockTime = 225 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 4.11s
+
+ExecutionTime = 221.735 s  ClockTime = 225 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 4.12s
+
+ExecutionTime = 221.816 s  ClockTime = 225 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 4.13s
+
+ExecutionTime = 221.897 s  ClockTime = 225 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 4.14s
+
+ExecutionTime = 221.978 s  ClockTime = 225 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 4.15s
+
+ExecutionTime = 222.058 s  ClockTime = 225 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 4.16s
+
+ExecutionTime = 222.14 s  ClockTime = 225 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 4.17s
+
+ExecutionTime = 222.22 s  ClockTime = 225 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 4.18s
+
+ExecutionTime = 222.301 s  ClockTime = 225 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 4.19s
+
+ExecutionTime = 222.382 s  ClockTime = 225 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 4.2s
+
+ExecutionTime = 222.462 s  ClockTime = 225 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 4.21s
+
+ExecutionTime = 222.543 s  ClockTime = 225 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 4.22s
+
+ExecutionTime = 222.625 s  ClockTime = 226 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 4.23s
+
+ExecutionTime = 222.706 s  ClockTime = 226 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 4.24s
+
+ExecutionTime = 222.787 s  ClockTime = 226 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 4.25s
+
+ExecutionTime = 222.867 s  ClockTime = 226 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 4.26s
+
+ExecutionTime = 222.949 s  ClockTime = 226 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 4.27s
+
+ExecutionTime = 223.029 s  ClockTime = 226 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 4.28s
+
+ExecutionTime = 223.11 s  ClockTime = 226 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 4.29s
+
+ExecutionTime = 223.191 s  ClockTime = 226 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 4.3s
+
+ExecutionTime = 223.272 s  ClockTime = 226 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 4.31s
+
+ExecutionTime = 223.352 s  ClockTime = 226 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 4.32s
+
+ExecutionTime = 223.433 s  ClockTime = 226 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 4.33s
+
+ExecutionTime = 223.514 s  ClockTime = 226 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 4.34s
+
+ExecutionTime = 223.595 s  ClockTime = 227 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 4.35s
+
+ExecutionTime = 223.676 s  ClockTime = 227 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 4.36s
+
+ExecutionTime = 223.756 s  ClockTime = 227 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 4.37s
+
+ExecutionTime = 223.838 s  ClockTime = 227 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 4.38s
+
+ExecutionTime = 223.919 s  ClockTime = 227 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 4.39s
+
+ExecutionTime = 224 s  ClockTime = 227 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 4.4s
+
+ExecutionTime = 224.081 s  ClockTime = 227 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 4.41s
+
+ExecutionTime = 224.161 s  ClockTime = 227 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 4.42s
+
+ExecutionTime = 224.242 s  ClockTime = 227 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 4.43s
+
+ExecutionTime = 224.323 s  ClockTime = 227 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 4.44s
+
+ExecutionTime = 224.404 s  ClockTime = 227 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 4.45s
+
+ExecutionTime = 224.486 s  ClockTime = 227 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 4.46s
+
+ExecutionTime = 224.567 s  ClockTime = 228 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 4.47s
+
+ExecutionTime = 224.647 s  ClockTime = 228 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 4.48s
+
+ExecutionTime = 224.728 s  ClockTime = 228 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 4.49s
+
+ExecutionTime = 224.809 s  ClockTime = 228 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 4.5s
+
+ExecutionTime = 224.889 s  ClockTime = 228 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 4.51s
+
+ExecutionTime = 224.97 s  ClockTime = 228 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 4.52s
+
+ExecutionTime = 225.05 s  ClockTime = 228 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 4.53s
+
+ExecutionTime = 225.13 s  ClockTime = 228 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 4.54s
+
+ExecutionTime = 225.212 s  ClockTime = 228 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 4.55s
+
+ExecutionTime = 225.292 s  ClockTime = 228 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 4.56s
+
+ExecutionTime = 225.373 s  ClockTime = 228 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 4.57s
+
+ExecutionTime = 225.455 s  ClockTime = 228 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 4.58s
+
+ExecutionTime = 225.536 s  ClockTime = 228 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 4.59s
+
+ExecutionTime = 225.616 s  ClockTime = 229 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 4.6s
+
+ExecutionTime = 225.698 s  ClockTime = 229 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 4.61s
+
+ExecutionTime = 225.778 s  ClockTime = 229 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 4.62s
+
+ExecutionTime = 225.859 s  ClockTime = 229 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 4.63s
+
+ExecutionTime = 225.939 s  ClockTime = 229 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 4.64s
+
+ExecutionTime = 226.021 s  ClockTime = 229 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 4.65s
+
+ExecutionTime = 226.102 s  ClockTime = 229 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 4.66s
+
+ExecutionTime = 226.182 s  ClockTime = 229 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 4.67s
+
+ExecutionTime = 226.263 s  ClockTime = 229 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 4.68s
+
+ExecutionTime = 226.344 s  ClockTime = 229 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 4.69s
+
+ExecutionTime = 226.425 s  ClockTime = 229 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 4.7s
+
+ExecutionTime = 226.506 s  ClockTime = 229 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 4.71s
+
+ExecutionTime = 226.586 s  ClockTime = 230 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 4.72s
+
+ExecutionTime = 226.668 s  ClockTime = 230 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 4.73s
+
+ExecutionTime = 226.749 s  ClockTime = 230 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 4.74s
+
+ExecutionTime = 226.83 s  ClockTime = 230 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 4.75s
+
+ExecutionTime = 226.912 s  ClockTime = 230 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 4.76s
+
+ExecutionTime = 226.992 s  ClockTime = 230 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 4.77s
+
+ExecutionTime = 227.073 s  ClockTime = 230 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 4.78s
+
+ExecutionTime = 227.154 s  ClockTime = 230 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 4.79s
+
+ExecutionTime = 227.235 s  ClockTime = 230 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 4.8s
+
+ExecutionTime = 227.316 s  ClockTime = 230 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 4.81s
+
+ExecutionTime = 227.397 s  ClockTime = 230 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 4.82s
+
+ExecutionTime = 227.477 s  ClockTime = 230 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 4.83s
+
+ExecutionTime = 227.559 s  ClockTime = 231 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 4.84s
+
+ExecutionTime = 227.64 s  ClockTime = 231 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 4.85s
+
+ExecutionTime = 227.721 s  ClockTime = 231 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 4.86s
+
+ExecutionTime = 227.802 s  ClockTime = 231 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 4.87s
+
+ExecutionTime = 227.883 s  ClockTime = 231 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 4.88s
+
+ExecutionTime = 227.963 s  ClockTime = 231 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 4.89s
+
+ExecutionTime = 228.044 s  ClockTime = 231 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 4.9s
+
+ExecutionTime = 228.125 s  ClockTime = 231 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 4.91s
+
+ExecutionTime = 228.206 s  ClockTime = 231 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 4.92s
+
+ExecutionTime = 228.288 s  ClockTime = 231 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 4.93s
+
+ExecutionTime = 228.368 s  ClockTime = 231 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 4.94s
+
+ExecutionTime = 228.449 s  ClockTime = 231 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 4.95s
+
+ExecutionTime = 228.529 s  ClockTime = 231 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 4.96s
+
+ExecutionTime = 228.611 s  ClockTime = 232 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 4.97s
+
+ExecutionTime = 228.692 s  ClockTime = 232 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 4.98s
+
+ExecutionTime = 228.773 s  ClockTime = 232 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 4.99s
+
+ExecutionTime = 228.855 s  ClockTime = 232 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+Time = 5s
+
+ExecutionTime = 229.142 s  ClockTime = 232 s
+
+scalarTransport write:
+DILUPBiCGStab:  Solving for C, Initial residual = 8.75631e-07, Final residual = 8.75631e-07, No Iterations 0
+
+mixingQuality = 0.567113
+End
+
