@@ -85,11 +85,12 @@ def plotRealErrors(angles, channelLengths, velocities, diffusivities):
             anglePos += 1
         lengthPos += 1
 
-    plt.title("Mean Squared Errors")
+    plt.title("Mean Squared Errors for H-mixer")
     plt.xlabel('Peclet Number')
     plt.ylabel('MSE')
     plt.xlim(125, 1e4)
     plt.ylim(0, 0.008)
+    plt.xticks([125, 2000, 4000, 6000, 8000, 10000])
     #plt.xscale("log")
     plt.plot(np.concatenate((xPoints[0][0][0][:], xPoints[0][0][1][:])), np.concatenate((yPoints[0][0][0][:], yPoints[0][0][1][:])), 'r-', label='cL 2 mm')
     plt.plot(np.concatenate((xPoints[1][0][0][:], xPoints[1][0][1][:])), np.concatenate((yPoints[1][0][0][:], yPoints[1][0][1][:])), 'g-', label='cL 10 mm')
