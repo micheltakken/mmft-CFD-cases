@@ -7,7 +7,7 @@ def main():
 
 def plotConc(directory):
 
-    fig, ax = plt.subplots(2, 2, figsize=(6.0,4.5))
+    fig, ax = plt.subplots(1, 3, figsize=(9.0,3))
     fig.suptitle(" ", x=0.38, size=10, weight='bold')
     #fig.suptitle("Concentration Distributions Case 2", x=0.38, size=16, weight='bold')
 
@@ -37,30 +37,28 @@ def plotConc(directory):
     dataTestE = pd.read_csv(filenameTestE)
     dataTestF = pd.read_csv(filenameTestF)
 
-    ax[0, 0].plot((100/(dataB['arc_length'].to_numpy()[-1]))*dataB['arc_length'].to_numpy(), 100*dataB['C'].to_numpy(), label="CFD")
-    ax[0, 0].plot((100/(dataTestB['x'].to_numpy()[-1]))*dataTestB['x'].to_numpy(), 100*dataTestB['f(x)'].to_numpy(), label="Abstract", color="red")
-    ax[1, 0].plot((100/(dataE['arc_length'].to_numpy()[-1]))*dataE['arc_length'].to_numpy(), 100*dataE['C'].to_numpy(), label="E-E'")
-    ax[1, 0].plot((100/(dataTestE['x'].to_numpy()[-1]))*dataTestE['x'].to_numpy(), 100*dataTestE['f(x)'].to_numpy(), label="E-E'-Test", color="red")
-    ax[1, 1].plot((100/(dataF['arc_length'].to_numpy()[-1]))*dataF['arc_length'].to_numpy(), 100*dataF['C'].to_numpy(), label="F-F'")
-    ax[1, 1].plot((100/(dataTestF['x'].to_numpy()[-1]))*dataTestF['x'].to_numpy(), 100*dataTestF['f(x)'].to_numpy(), label="F-F'-Test", color="red")
+    ax[0].plot((100/(dataB['arc_length'].to_numpy()[-1]))*dataB['arc_length'].to_numpy(), 100*dataB['C'].to_numpy(), label="CFD")
+    ax[0].plot((100/(dataTestB['x'].to_numpy()[-1]))*dataTestB['x'].to_numpy(), 100*dataTestB['f(x)'].to_numpy(), label="Abstract", color="red")
+    ax[1].plot((100/(dataE['arc_length'].to_numpy()[-1]))*dataE['arc_length'].to_numpy(), 100*dataE['C'].to_numpy(), label="E-E'")
+    ax[1].plot((100/(dataTestE['x'].to_numpy()[-1]))*dataTestE['x'].to_numpy(), 100*dataTestE['f(x)'].to_numpy(), label="E-E'-Test", color="red")
+    ax[2].plot((100/(dataF['arc_length'].to_numpy()[-1]))*dataF['arc_length'].to_numpy(), 100*dataF['C'].to_numpy(), label="F-F'")
+    ax[2].plot((100/(dataTestF['x'].to_numpy()[-1]))*dataTestF['x'].to_numpy(), 100*dataTestF['f(x)'].to_numpy(), label="F-F'-Test", color="red")
 
-    ax[0, 0].set_xlim([0, 100])
-    ax[0, 0].set_ylim([0, 100])
-    ax[0, 1].set_xlim([0, 100])
-    ax[0, 1].set_ylim([0, 100])
-    ax[1, 0].set_xlim([0, 100])
-    ax[1, 0].set_ylim([0, 100])
-    ax[1, 1].set_xlim([0, 100])
-    ax[1, 1].set_ylim([0, 100])
+    ax[0].set_xlim([0, 100])
+    ax[0].set_ylim([0, 100])
+    ax[1].set_xlim([0, 100])
+    ax[1].set_ylim([0, 100])
+    ax[2].set_xlim([0, 100])
+    ax[2].set_ylim([0, 100])
 
-    ax[0, 0].set_title("A-A'")
-    ax[1, 0].set_title("B-B'")
-    ax[1, 1].set_title("C-C'")
+    ax[0].set_title("A-A'")
+    ax[1].set_title("B-B'")
+    ax[2].set_title("C-C'")
 
-    lines_labels = [ax[0,0].get_legend_handles_labels()]
+    lines_labels = [ax[0].get_legend_handles_labels()]
     lines, labels = [sum(lol, []) for lol in zip(*lines_labels)]
 
-    fig.legend(lines, labels, loc='upper right', ncol=1)
+    fig.legend(lines, labels, loc='upper right', ncol=2)
     fig.supxlabel("Channel width ($\mu$m)")
     fig.supylabel("Concentration (%)")
     fig.tight_layout(w_pad=1.5)
